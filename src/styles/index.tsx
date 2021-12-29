@@ -1,6 +1,5 @@
 import { FC } from 'react';
-import StylesGlobal from '@sweetsyui/ui/build/@styles/stylesglobal';
 
-const GlobalStyles: FC = () => <StylesGlobal />;
+const GlobalStyles: FC = () => <></>;
 
 export default GlobalStyles;

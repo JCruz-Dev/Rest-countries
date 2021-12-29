@@ -1,10 +1,7 @@
 import { combineReducers } from 'redux';
-import SideBarReducer from './sidebar';
-import UserReducer from './user';
 
 const RootReducer = combineReducers({
-  user: UserReducer,
-  sideBar: SideBarReducer
+  user: {}
 });
 
 export type RootStateType = ReturnType<typeof RootReducer>;

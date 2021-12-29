@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { persistStore, persistReducer } from 'redux-persist';
+import { persistReducer, persistStore } from 'redux-persist';
 import createWebStorage from 'redux-persist/lib/storage/createWebStorage';
 import RootReducer from './reducer';
 
@@ -27,7 +27,7 @@ const storage =
 const PersistConfig = {
   key: 'root',
   storage,
-  blacklist: ['modal', 'sidebar']
+  blacklist: []
 };
 
 const PersistedReducer = persistReducer(PersistConfig, RootReducer);
