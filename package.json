@@ -9,7 +9,6 @@
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|d.ts)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|d.ts)\" --write",
-    "ul": "npm uninstall @sweetsyui/ui && npm i @sweetsyui/ui",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
