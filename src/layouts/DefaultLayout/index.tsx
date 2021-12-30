@@ -4,9 +4,5 @@ type Props = {
   Role?: string | string[];
 };
 
-const DefaultLayout: FC<Props> = ({ children }) => (
-    <div>
-      {children}
-    </div>
-);
+const DefaultLayout: FC<Props> = ({ children }) => <div>{children}</div>;
 export default DefaultLayout;

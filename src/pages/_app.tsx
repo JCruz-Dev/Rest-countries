@@ -9,14 +9,14 @@ import { PersistGate } from 'redux-persist/integration/react';
 const _App: FC<AppPropsWithLayout> = ({ Component, pageProps }) => {
   const { persistor, store } = useStore();
   return (
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-            <LayoutContext Layout={Component.Layout} Role={Component.Role}>
-              <GlobalStyles />
-              <Component {...pageProps} />
-            </LayoutContext>
-        </PersistGate>
-      </Provider>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <LayoutContext Layout={Component.Layout} Role={Component.Role}>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </LayoutContext>
+      </PersistGate>
+    </Provider>
   );
 };
 
